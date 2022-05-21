@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap');
+
+*{
+  font-family: 'Quicksand', sans-serif;
+  
+}
+
+#logo{
+  font-size: 44px;
+}
+
+#top-bar{
+  border-radius: 32px;
+  font-weight: 700;
+  padding: 10px 60px;
+}
+
+#nav-link-container{
+  padding-right: 30px;
+}
+
+
+.nav-links{
+  padding: 0px 20px;
+  font-size: 22px;
+}
+
+.nav-links:hover{
+  color: #81e6d9;
+  font-weight: 700;
+  overflow: hidden;
+}
+
+#footer{
+  padding: 0;
+  margin: 0;
+}
