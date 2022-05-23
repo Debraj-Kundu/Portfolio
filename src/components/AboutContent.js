@@ -4,16 +4,16 @@ import aboutConfig from '../config/aboutConfig'
 const AboutContent = () => {
   function renderEdu(course, school, date, grade, i) {
     return (
-      <Flex pt={5} key={i} direction="column">
-        <Text fontSize="20">{course}</Text>
-        <Flex color="white" justifyContent="space-between">
-          <Text fontSize="16" color="teal.200">
+      <Flex pt={5} key={i} direction="column" bg="gray.700">
+        <Text fontSize="20" bg="gray.700">{course}</Text>
+        <Flex color="white" justifyContent="space-between" bg="gray.700">
+          <Text fontSize="16" color="teal.200" bg="gray.700">
             {school}{' '}
-            <Text as="span" color="white" fontSize="12">
+            <Text as="span" color="white" fontSize="12" bg="gray.700">
               {date}
             </Text>{' '}
           </Text>
-          <Text as="span" color="teal.200" fontSize="14">
+          <Text as="span" color="teal.200" fontSize="14" bg="gray.700">
             {grade}
           </Text>
         </Flex>
@@ -23,12 +23,12 @@ const AboutContent = () => {
 
   function renderCerti(name, link, i) {
     return (
-      <Box pt={4} key={i}>
-        <Text fontSize="18">{name}</Text>
-        <Text fontSize="14" color="teal.200">
+      <Box pt={4} key={i} bg="gray.700">
+        <Text fontSize="18" bg="gray.700">{name}</Text>
+        <Text fontSize="14" bg="gray.700" color="teal.200">
           Coursera
         </Text>
-        <Text fontSize="11" color="blue.200">
+        <Text fontSize="11" bg="gray.700" color="blue.200">
           <a href={link} rel="noreferrer" target="_blank">
             {link}
           </a>
@@ -68,7 +68,7 @@ const AboutContent = () => {
         display="flex"
         flexDirection="column"
       >
-        <Text fontSize="30" color="teal.200">
+        <Text fontSize="30" color="teal.200" bg="gray.700">
           EDUCATION 📖
         </Text>
         <Divider borderColor="gray.200" mt={1} mb={0} />
@@ -87,7 +87,7 @@ const AboutContent = () => {
         display="flex"
         flexDirection="column"
       >
-        <Text fontSize="30" color="teal.200">
+        <Text fontSize="30" color="teal.200" bg="gray.700">
           CERTIFICATES 📜
         </Text>
         <Divider borderColor="gray.200" mt={1} mb={0} />
@@ -106,11 +106,11 @@ const AboutContent = () => {
         display="flex"
         flexDirection="column"
       >
-        <Text fontSize="30" color="teal.200">
+        <Text fontSize="30" color="teal.200" bg="gray.700">
           SKILLS 🧪
         </Text>
         <Divider borderColor="gray.200" mt={1} mb={0} />
-        <Flex color="white" justifyContent="space-between" flexWrap="wrap">
+        <Flex color="white" justifyContent="space-between" flexWrap="wrap" bg="gray.700">
           {aboutConfig[2].items.map((item, i) => {
             return renderSkill(item, i)
           })}
@@ -127,11 +127,11 @@ const AboutContent = () => {
         display="flex"
         flexDirection="column"
       >
-        <Text fontSize="30" color="teal.200">
+        <Text fontSize="30" color="teal.200" bg="gray.700">
           INTRESTS 🔭
         </Text>
         <Divider borderColor="gray.200" mt={1} mb={0} />
-        <Flex color="white" justifyContent="space-between" flexWrap="wrap">
+        <Flex color="white" justifyContent="space-between" flexWrap="wrap" bg="gray.700">
           {aboutConfig[3].items.map((item, i) => {
             return renderSkill(item, i)
           })}
