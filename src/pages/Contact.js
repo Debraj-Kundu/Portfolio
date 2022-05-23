@@ -9,7 +9,6 @@ const Home = () => {
     <VStack >
       <TopBar />
       <StackDivider p={2}/>
-      <HomeContent/>
       <Divider borderColor='grey.600' pt={6} />
       <Footer />
     </VStack>

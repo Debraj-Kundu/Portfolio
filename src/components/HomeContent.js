@@ -1,4 +1,5 @@
 import { Box, Flex, Image, Divider, Text } from '@chakra-ui/react'
+import { Link } from 'react-router-dom'
 
 const HomeContent = () => {
   return (
@@ -38,7 +39,7 @@ const HomeContent = () => {
         </Box>
       </Flex>
       <Text color="teal.200">
-        Thanks for visiting! be sure to checkout my projects 😉{' '}
+        <Link to='/project'>Thanks for visiting! be sure to checkout my projects 😉{' '}</Link>
       </Text>
     </Box>
   )

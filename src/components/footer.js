@@ -53,7 +53,7 @@ const Footer = () => {
             }}
             title="IN"
           />{' '}
-          by Debraj Kundu {new Date().getFullYear()}
+          by <Text as='span' color='teal.200'> Debraj Kundu </Text> {new Date().getFullYear()}
         </Text>
 
         <Box textAlign="center">
